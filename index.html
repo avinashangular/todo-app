@@ -4,13 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Webpack & Babel Demonstration</title>
+    <link href="./style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <title>My todo app</title>
   </head>
   <body>
-    <main>
-      <h1>Parts List</h1>
-      <ol id="part-list"></ol>
-    </main>
+    <div class="todo-container">
+      <div class="todo-header">
+        <h2>My todo app</h2>
+      </div>
+      <div class="create-todo-item">
+        <input type="text" placeholder="Add todo and press enter" maxlength="50" autofocus class="todo-input" id="todo-input"/>
+        <input type="button" class="todo-input-btn" id="todo-input-btn" value="Add">
+      </div>
+      <div class="todo-content" id="todo-content">       
+      </div>
+    </div>
     <script src="./dist/bundle.js" charset="utf-8"></script>
   </body>
 </html>
